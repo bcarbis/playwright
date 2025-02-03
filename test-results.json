@@ -1,7 +1,7 @@
 {
   "config": {
-    "configFile": "C:\\Program Files\\playwright-automation\\playwright.config.ts",
-    "rootDir": "C:/Program Files/playwright-automation/tests",
+    "configFile": "C:\\Program Files\\playwright-1\\playwright.config.ts",
+    "rootDir": "C:/Program Files/playwright-1/tests",
     "forbidOnly": false,
     "fullyParallel": true,
     "globalSetup": null,
@@ -32,7 +32,7 @@
         }
       ],
       [
-        "C:\\Program Files\\playwright-automation\\node_modules\\allure-playwright\\dist\\cjs\\index.js",
+        "C:\\Program Files\\playwright-1\\node_modules\\allure-playwright\\dist\\cjs\\index.js",
         null
       ]
     ],
@@ -43,13 +43,13 @@
     "quiet": false,
     "projects": [
       {
-        "outputDir": "C:/Program Files/playwright-automation/test-results",
+        "outputDir": "C:/Program Files/playwright-1/test-results",
         "repeatEach": 1,
         "retries": 2,
         "metadata": {},
         "id": "chromium",
         "name": "chromium",
-        "testDir": "C:/Program Files/playwright-automation/tests",
+        "testDir": "C:/Program Files/playwright-1/tests",
         "testIgnore": [],
         "testMatch": [
           "**/*.@(spec|test).?(c|m)[jt]s?(x)"
@@ -57,13 +57,13 @@
         "timeout": 30000
       },
       {
-        "outputDir": "C:/Program Files/playwright-automation/test-results",
+        "outputDir": "C:/Program Files/playwright-1/test-results",
         "repeatEach": 1,
         "retries": 2,
         "metadata": {},
         "id": "firefox",
         "name": "firefox",
-        "testDir": "C:/Program Files/playwright-automation/tests",
+        "testDir": "C:/Program Files/playwright-1/tests",
         "testIgnore": [],
         "testMatch": [
           "**/*.@(spec|test).?(c|m)[jt]s?(x)"
@@ -71,13 +71,13 @@
         "timeout": 30000
       },
       {
-        "outputDir": "C:/Program Files/playwright-automation/test-results",
+        "outputDir": "C:/Program Files/playwright-1/test-results",
         "repeatEach": 1,
         "retries": 2,
         "metadata": {},
         "id": "webkit",
         "name": "webkit",
-        "testDir": "C:/Program Files/playwright-automation/tests",
+        "testDir": "C:/Program Files/playwright-1/tests",
         "testIgnore": [],
         "testMatch": [
           "**/*.@(spec|test).?(c|m)[jt]s?(x)"
@@ -114,17 +114,17 @@
                 {
                   "workerIndex": 0,
                   "status": "passed",
-                  "duration": 11020,
+                  "duration": 10681,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2025-02-03T13:08:39.882Z",
+                  "startTime": "2025-02-03T15:19:48.530Z",
                   "attachments": [
                     {
                       "name": "trace",
                       "contentType": "application/zip",
-                      "path": "C:\\Program Files\\playwright-automation\\test-results\\example-has-title-chromium\\trace.zip"
+                      "path": "C:\\Program Files\\playwright-1\\test-results\\example-has-title-chromium\\trace.zip"
                     }
                   ]
                 }
@@ -152,17 +152,17 @@
                 {
                   "workerIndex": 1,
                   "status": "passed",
-                  "duration": 11256,
+                  "duration": 12641,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2025-02-03T13:08:39.851Z",
+                  "startTime": "2025-02-03T15:19:48.540Z",
                   "attachments": [
                     {
                       "name": "trace",
                       "contentType": "application/zip",
-                      "path": "C:\\Program Files\\playwright-automation\\test-results\\example-get-started-link-chromium\\trace.zip"
+                      "path": "C:\\Program Files\\playwright-1\\test-results\\example-get-started-link-chromium\\trace.zip"
                     }
                   ]
                 }
@@ -190,17 +190,17 @@
                 {
                   "workerIndex": 2,
                   "status": "passed",
-                  "duration": 7364,
+                  "duration": 7554,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2025-02-03T13:08:39.862Z",
+                  "startTime": "2025-02-03T15:19:48.529Z",
                   "attachments": [
                     {
                       "name": "trace",
                       "contentType": "application/zip",
-                      "path": "C:\\Program Files\\playwright-automation\\test-results\\example-has-title-firefox\\trace.zip"
+                      "path": "C:\\Program Files\\playwright-1\\test-results\\example-has-title-firefox\\trace.zip"
                     }
                   ]
                 }
@@ -228,17 +228,17 @@
                 {
                   "workerIndex": 3,
                   "status": "passed",
-                  "duration": 13199,
+                  "duration": 11429,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2025-02-03T13:08:39.863Z",
+                  "startTime": "2025-02-03T15:19:48.541Z",
                   "attachments": [
                     {
                       "name": "trace",
                       "contentType": "application/zip",
-                      "path": "C:\\Program Files\\playwright-automation\\test-results\\example-get-started-link-firefox\\trace.zip"
+                      "path": "C:\\Program Files\\playwright-1\\test-results\\example-get-started-link-firefox\\trace.zip"
                     }
                   ]
                 }
@@ -266,17 +266,17 @@
                 {
                   "workerIndex": 5,
                   "status": "passed",
-                  "duration": 2551,
+                  "duration": 2648,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2025-02-03T13:08:53.268Z",
+                  "startTime": "2025-02-03T15:20:02.371Z",
                   "attachments": [
                     {
                       "name": "trace",
                       "contentType": "application/zip",
-                      "path": "C:\\Program Files\\playwright-automation\\test-results\\example-has-title-webkit\\trace.zip"
+                      "path": "C:\\Program Files\\playwright-1\\test-results\\example-has-title-webkit\\trace.zip"
                     }
                   ]
                 }
@@ -304,17 +304,17 @@
                 {
                   "workerIndex": 4,
                   "status": "passed",
-                  "duration": 6463,
+                  "duration": 6289,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2025-02-03T13:08:53.296Z",
+                  "startTime": "2025-02-03T15:20:01.912Z",
                   "attachments": [
                     {
                       "name": "trace",
                       "contentType": "application/zip",
-                      "path": "C:\\Program Files\\playwright-automation\\test-results\\example-get-started-link-webkit\\trace.zip"
+                      "path": "C:\\Program Files\\playwright-1\\test-results\\example-get-started-link-webkit\\trace.zip"
                     }
                   ]
                 }
@@ -332,8 +332,8 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2025-02-03T13:08:38.616Z",
-    "duration": 21490.664,
+    "startTime": "2025-02-03T15:19:46.850Z",
+    "duration": 21754.999,
     "expected": 6,
     "skipped": 0,
     "unexpected": 0,

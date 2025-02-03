@@ -2,7 +2,12 @@ import { defineConfig } from '@playwright/test';
 
 export default defineConfig({
   testDir: './tests',
-  reporter: [['list'], ['json', { outputFile: 'test-results.json' }], ['html', { outputFolder: 'test-results' }], ['allure-playwright']],
+  reporter: [
+    ['list'],
+    ['json', { outputFile: 'test-results.json' }],
+    ['html', { outputFolder: 'test-results' }],
+    ['allure-playwright'] // Added Allure reporting
+  ],
   use: {
     browserName: 'chromium',
     headless: true,
