@@ -1,7 +1,7 @@
 import { defineConfig } from '@playwright/test';
 
 export default defineConfig({
-  testDir: './t
+  testDir: './tests',
   reporter: [['list'], ['json', { outputFile: 'test-results.json' }], ['html', { outputFolder: 'test-results' }], ['allure-playwright']],
   use: {
     browserName: 'chromium',
