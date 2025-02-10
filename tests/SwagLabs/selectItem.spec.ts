@@ -1,13 +1,12 @@
 import { test, expect, Page } from '@playwright/test';
-import { loginToSaucedemo } from './Login.spec';
+import { loginToSaucedemo } from '../commonActions';
 import { pauseExecution } from '../utils';
 
 test('select single item test', async ({ page }) => {
     // Run the login script
     await loginToSaucedemo(page);
 
-    // Your test code here
-    await page.pause();
+    // Select Single Item
     const firstSelection = await page.locator('[data-test="item-4-title-link"]').innerText();
     await page.locator('[data-test="item-4-title-link"]').click();
     console.log(firstSelection); 

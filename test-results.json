@@ -11,7 +11,7 @@
     "grepInvert": null,
     "maxFailures": 0,
     "metadata": {
-      "actualWorkers": 2
+      "actualWorkers": 4
     },
     "preserveOutput": "always",
     "reporter": [
@@ -66,8 +66,92 @@
   },
   "suites": [
     {
-      "title": "SwagLabs\\selectMultipleItems.spec.ts",
-      "file": "SwagLabs/selectMultipleItems.spec.ts",
+      "title": "example.spec.ts",
+      "file": "example.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "has title",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "SwagLabs",
+              "projectName": "SwagLabs",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "status": "passed",
+                  "duration": 15269,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-02-10T15:27:07.570Z",
+                  "attachments": [
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "C:\\Users\\alana\\playwright\\test-results\\example-has-title-SwagLabs\\trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "a30a6eba6312f6b87ea5-6bfa434fcb65546e05f8",
+          "file": "example.spec.ts",
+          "line": 3,
+          "column": 5
+        },
+        {
+          "title": "get started link",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "SwagLabs",
+              "projectName": "SwagLabs",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "status": "passed",
+                  "duration": 15122,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-02-10T15:27:07.579Z",
+                  "attachments": [
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "C:\\Users\\alana\\playwright\\test-results\\example-get-started-link-SwagLabs\\trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "a30a6eba6312f6b87ea5-d214b589ab2b56080b3f",
+          "file": "example.spec.ts",
+          "line": 10,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "SwagLabs\\login.spec.ts",
+      "file": "SwagLabs/login.spec.ts",
       "column": 0,
       "line": 0,
       "specs": [
@@ -84,19 +168,19 @@
               "projectName": "SwagLabs",
               "results": [
                 {
-                  "workerIndex": 0,
+                  "workerIndex": 2,
                   "status": "passed",
-                  "duration": 6205,
+                  "duration": 13770,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2025-02-10T15:04:56.823Z",
+                  "startTime": "2025-02-10T15:27:07.602Z",
                   "attachments": [
                     {
                       "name": "trace",
                       "contentType": "application/zip",
-                      "path": "C:\\Users\\alana\\playwright\\test-results\\SwagLabs-selectMultipleItems-login-to-saucedemo-SwagLabs\\trace.zip"
+                      "path": "C:\\Users\\alana\\playwright\\test-results\\SwagLabs-login-login-to-saucedemo-SwagLabs\\trace.zip"
                     }
                   ]
                 }
@@ -104,11 +188,19 @@
               "status": "expected"
             }
           ],
-          "id": "eaef058bb1fd7d1815f5-a8ceca16e4d461b20ccb",
-          "file": "SwagLabs/Login.spec.ts",
-          "line": 27,
+          "id": "be6923289d49960aa97e-7e65e172dba729c97cb3",
+          "file": "SwagLabs/login.spec.ts",
+          "line": 4,
           "column": 5
-        },
+        }
+      ]
+    },
+    {
+      "title": "SwagLabs\\selectItem.spec.ts",
+      "file": "SwagLabs/selectItem.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
         {
           "title": "select single item test",
           "ok": true,
@@ -122,9 +214,59 @@
               "projectName": "SwagLabs",
               "results": [
                 {
-                  "workerIndex": 1,
+                  "workerIndex": 3,
                   "status": "passed",
-                  "duration": 16517,
+                  "duration": 14872,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "Sauce Labs Backpack\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-02-10T15:27:07.595Z",
+                  "attachments": [
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "C:\\Users\\alana\\playwright\\test-results\\SwagLabs-selectItem-select-single-item-test-SwagLabs\\trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "82f222b977f8b9e5d114-b9122445c8ba34ad822c",
+          "file": "SwagLabs/selectItem.spec.ts",
+          "line": 5,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "SwagLabs\\selectMultipleItems.spec.ts",
+      "file": "SwagLabs/selectMultipleItems.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "select single item test",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "SwagLabs",
+              "projectName": "SwagLabs",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "status": "passed",
+                  "duration": 7121,
                   "errors": [],
                   "stdout": [
                     {
@@ -136,7 +278,7 @@
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2025-02-10T15:04:56.823Z",
+                  "startTime": "2025-02-10T15:27:23.279Z",
                   "attachments": [
                     {
                       "name": "trace",
@@ -159,9 +301,9 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2025-02-10T15:04:55.101Z",
-    "duration": 20456.469,
-    "expected": 2,
+    "startTime": "2025-02-10T15:27:05.169Z",
+    "duration": 26056.713,
+    "expected": 5,
     "skipped": 0,
     "unexpected": 0,
     "flaky": 0

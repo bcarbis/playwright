@@ -1,5 +1,5 @@
 import { test, expect, Page } from '@playwright/test';
-import { loginToSaucedemo } from './Login.spec';
+import { loginToSaucedemo } from '../commonActions';
 import { pauseExecution } from '../utils';
 
 test('select single item test', async ({ page }) => {
@@ -9,8 +9,8 @@ test('select single item test', async ({ page }) => {
  
     //make first selection
     const firstSelection = await page.locator('[data-test="item-0-title-link"]').innerText();
-console.log(firstSelection); 
-await page.locator('[data-test="item-0-title-link"]').click();
+    console.log(firstSelection); 
+    await page.locator('[data-test="item-0-title-link"]').click();
 await page.locator('[data-test="add-to-cart"]').click();
 await page.locator('[data-test="back-to-products"]').click();
 
@@ -23,7 +23,6 @@ await page.locator('[data-test="back-to-products"]').click();
 await page.locator('[data-test="shopping-cart-link"]').click();
 
 //Check Cart
-await page.pause();
     await page.locator('[data-test="shopping-cart-link"]').click();
     await pauseExecution(1000);
     await expect(page.locator('.cart_item')).toContainText([firstSelection, secondSelection]);

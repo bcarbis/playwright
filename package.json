@@ -2,7 +2,9 @@
   "name": "playwright-automation",
   "version": "1.0.0",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "clean:allure": "rimraf allure-results && rimraf allure-report"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
@@ -10,7 +12,8 @@
   "devDependencies": {
     "@playwright/test": "^1.50.1",
     "@types/node": "^22.13.0",
-    "allure-playwright": "^3.1.0"
+    "allure-playwright": "^3.1.0",
+    "rimraf": "^3.0.2"
   },
   "dependencies": {
     "dotenv": "^16.4.7"
