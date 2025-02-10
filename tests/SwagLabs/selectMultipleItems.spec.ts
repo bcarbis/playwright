@@ -1,30 +1,38 @@
 import { test, expect, Page } from '@playwright/test';
 import { loginToSaucedemo } from '../commonActions';
 import { pauseExecution } from '../utils';
+import { screenshotAllure, addStep } from '../allureActions';
 
-test('select single item test', async ({ page }) => {
+test('select multiple items test', async ({ page }) => {
     // Run the login script
     await loginToSaucedemo(page);
 
- 
-    //make first selection
-    const firstSelection = await page.locator('[data-test="item-0-title-link"]').innerText();
-    console.log(firstSelection); 
-    await page.locator('[data-test="item-0-title-link"]').click();
-await page.locator('[data-test="add-to-cart"]').click();
-await page.locator('[data-test="back-to-products"]').click();
+    let firstSelection: string;
+    let secondSelection: string;
 
-//make second Selection
-const secondSelection = await page.locator('[data-test="item-2-title-link"]').innerText();
-console.log(secondSelection); 
-await page.locator('[data-test="item-2-title-link"]').click();
-await page.locator('[data-test="add-to-cart"]').click();
-await page.locator('[data-test="back-to-products"]').click();
-await page.locator('[data-test="shopping-cart-link"]').click();
+    // Make first selection
+    await addStep('Selecting first item', async () => {
+        firstSelection = await page.locator('[data-test="item-0-title-link"]').innerText();
+        console.log(firstSelection); 
+        await page.locator('[data-test="item-0-title-link"]').click();
+        await page.locator('[data-test="add-to-cart"]').click();
+        await page.locator('[data-test="back-to-products"]').click();
+    });
 
-//Check Cart
-    await page.locator('[data-test="shopping-cart-link"]').click();
-    await pauseExecution(1000);
-    await expect(page.locator('.cart_item')).toContainText([firstSelection, secondSelection]);
-    await page.screenshot({ path: `./screenshots/${firstSelection}-${secondSelection}.png` });
+    // Make second selection
+    await addStep('Selecting second item', async () => {
+        secondSelection = await page.locator('[data-test="item-2-title-link"]').innerText();
+        console.log(secondSelection); 
+        await page.locator('[data-test="item-2-title-link"]').click();
+        await page.locator('[data-test="add-to-cart"]').click();
+        await page.locator('[data-test="back-to-products"]').click();
+        await page.locator('[data-test="shopping-cart-link"]').click();
+    });
+
+    // Check Cart
+    await addStep('Check cart', async () => {
+        await pauseExecution(1000);
+        await expect(page.locator('.cart_item')).toContainText([firstSelection, secondSelection]);
+        await screenshotAllure('Cart Items', page);
+    });
 });
