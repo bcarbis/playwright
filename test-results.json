@@ -1,7 +1,7 @@
 {
   "config": {
-    "configFile": "C:\\Program Files\\playwright-automation\\playwright.config.ts",
-    "rootDir": "C:/Program Files/playwright-automation/tests",
+    "configFile": "C:\\Users\\alana\\playwright\\playwright.config.ts",
+    "rootDir": "C:/Users/alana/playwright/tests",
     "forbidOnly": false,
     "fullyParallel": true,
     "globalSetup": null,
@@ -11,7 +11,7 @@
     "grepInvert": null,
     "maxFailures": 0,
     "metadata": {
-      "actualWorkers": 4
+      "actualWorkers": 2
     },
     "preserveOutput": "always",
     "reporter": [
@@ -32,7 +32,7 @@
         }
       ],
       [
-        "C:\\Program Files\\playwright-automation\\node_modules\\allure-playwright\\dist\\cjs\\index.js",
+        "C:\\Users\\alana\\playwright\\node_modules\\allure-playwright\\dist\\cjs\\index.js",
         null
       ]
     ],
@@ -43,41 +43,13 @@
     "quiet": false,
     "projects": [
       {
-        "outputDir": "C:/Program Files/playwright-automation/test-results",
+        "outputDir": "C:/Users/alana/playwright/test-results",
         "repeatEach": 1,
         "retries": 2,
         "metadata": {},
-        "id": "chromium",
-        "name": "chromium",
-        "testDir": "C:/Program Files/playwright-automation/tests",
-        "testIgnore": [],
-        "testMatch": [
-          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
-        ],
-        "timeout": 30000
-      },
-      {
-        "outputDir": "C:/Program Files/playwright-automation/test-results",
-        "repeatEach": 1,
-        "retries": 2,
-        "metadata": {},
-        "id": "firefox",
-        "name": "firefox",
-        "testDir": "C:/Program Files/playwright-automation/tests",
-        "testIgnore": [],
-        "testMatch": [
-          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
-        ],
-        "timeout": 30000
-      },
-      {
-        "outputDir": "C:/Program Files/playwright-automation/test-results",
-        "repeatEach": 1,
-        "retries": 2,
-        "metadata": {},
-        "id": "webkit",
-        "name": "webkit",
-        "testDir": "C:/Program Files/playwright-automation/tests",
+        "id": "SwagLabs",
+        "name": "SwagLabs",
+        "testDir": "C:/Users/alana/playwright/tests",
         "testIgnore": [],
         "testMatch": [
           "**/*.@(spec|test).?(c|m)[jt]s?(x)"
@@ -94,13 +66,13 @@
   },
   "suites": [
     {
-      "title": "example.spec.ts",
-      "file": "example.spec.ts",
+      "title": "SwagLabs\\selectItem.spec.ts",
+      "file": "SwagLabs/selectItem.spec.ts",
       "column": 0,
       "line": 0,
       "specs": [
         {
-          "title": "has title",
+          "title": "login to saucedemo",
           "ok": true,
           "tags": [],
           "tests": [
@@ -108,23 +80,23 @@
               "timeout": 30000,
               "annotations": [],
               "expectedStatus": "passed",
-              "projectId": "chromium",
-              "projectName": "chromium",
+              "projectId": "SwagLabs",
+              "projectName": "SwagLabs",
               "results": [
                 {
                   "workerIndex": 0,
                   "status": "passed",
-                  "duration": 11020,
+                  "duration": 4588,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2025-02-03T13:08:39.882Z",
+                  "startTime": "2025-02-10T13:55:53.672Z",
                   "attachments": [
                     {
                       "name": "trace",
                       "contentType": "application/zip",
-                      "path": "C:\\Program Files\\playwright-automation\\test-results\\example-has-title-chromium\\trace.zip"
+                      "path": "C:\\Users\\alana\\playwright\\test-results\\SwagLabs-selectItem-login-to-saucedemo-SwagLabs\\trace.zip"
                     }
                   ]
                 }
@@ -132,13 +104,13 @@
               "status": "expected"
             }
           ],
-          "id": "a30a6eba6312f6b87ea5-b06063a3e613764d08f8",
-          "file": "example.spec.ts",
-          "line": 3,
+          "id": "82f222b977f8b9e5d114-01ada2de2e203dfc3305",
+          "file": "SwagLabs/Login.spec.ts",
+          "line": 27,
           "column": 5
         },
         {
-          "title": "get started link",
+          "title": "select item test",
           "ok": true,
           "tags": [],
           "tests": [
@@ -146,23 +118,23 @@
               "timeout": 30000,
               "annotations": [],
               "expectedStatus": "passed",
-              "projectId": "chromium",
-              "projectName": "chromium",
+              "projectId": "SwagLabs",
+              "projectName": "SwagLabs",
               "results": [
                 {
                   "workerIndex": 1,
                   "status": "passed",
-                  "duration": 11256,
+                  "duration": 10844,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2025-02-03T13:08:39.851Z",
+                  "startTime": "2025-02-10T13:55:53.677Z",
                   "attachments": [
                     {
                       "name": "trace",
                       "contentType": "application/zip",
-                      "path": "C:\\Program Files\\playwright-automation\\test-results\\example-get-started-link-chromium\\trace.zip"
+                      "path": "C:\\Users\\alana\\playwright\\test-results\\SwagLabs-selectItem-select-item-test-SwagLabs\\trace.zip"
                     }
                   ]
                 }
@@ -170,161 +142,9 @@
               "status": "expected"
             }
           ],
-          "id": "a30a6eba6312f6b87ea5-274e97907a6e3638a22f",
-          "file": "example.spec.ts",
-          "line": 10,
-          "column": 5
-        },
-        {
-          "title": "has title",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 30000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "firefox",
-              "projectName": "firefox",
-              "results": [
-                {
-                  "workerIndex": 2,
-                  "status": "passed",
-                  "duration": 7364,
-                  "errors": [],
-                  "stdout": [],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2025-02-03T13:08:39.862Z",
-                  "attachments": [
-                    {
-                      "name": "trace",
-                      "contentType": "application/zip",
-                      "path": "C:\\Program Files\\playwright-automation\\test-results\\example-has-title-firefox\\trace.zip"
-                    }
-                  ]
-                }
-              ],
-              "status": "expected"
-            }
-          ],
-          "id": "a30a6eba6312f6b87ea5-f53a5ad453cd33dc57d5",
-          "file": "example.spec.ts",
-          "line": 3,
-          "column": 5
-        },
-        {
-          "title": "get started link",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 30000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "firefox",
-              "projectName": "firefox",
-              "results": [
-                {
-                  "workerIndex": 3,
-                  "status": "passed",
-                  "duration": 13199,
-                  "errors": [],
-                  "stdout": [],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2025-02-03T13:08:39.863Z",
-                  "attachments": [
-                    {
-                      "name": "trace",
-                      "contentType": "application/zip",
-                      "path": "C:\\Program Files\\playwright-automation\\test-results\\example-get-started-link-firefox\\trace.zip"
-                    }
-                  ]
-                }
-              ],
-              "status": "expected"
-            }
-          ],
-          "id": "a30a6eba6312f6b87ea5-bfe080d6fe34297f494c",
-          "file": "example.spec.ts",
-          "line": 10,
-          "column": 5
-        },
-        {
-          "title": "has title",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 30000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "webkit",
-              "projectName": "webkit",
-              "results": [
-                {
-                  "workerIndex": 5,
-                  "status": "passed",
-                  "duration": 2551,
-                  "errors": [],
-                  "stdout": [],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2025-02-03T13:08:53.268Z",
-                  "attachments": [
-                    {
-                      "name": "trace",
-                      "contentType": "application/zip",
-                      "path": "C:\\Program Files\\playwright-automation\\test-results\\example-has-title-webkit\\trace.zip"
-                    }
-                  ]
-                }
-              ],
-              "status": "expected"
-            }
-          ],
-          "id": "a30a6eba6312f6b87ea5-4a26ebd06a6b810edcc2",
-          "file": "example.spec.ts",
-          "line": 3,
-          "column": 5
-        },
-        {
-          "title": "get started link",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 30000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "webkit",
-              "projectName": "webkit",
-              "results": [
-                {
-                  "workerIndex": 4,
-                  "status": "passed",
-                  "duration": 6463,
-                  "errors": [],
-                  "stdout": [],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2025-02-03T13:08:53.296Z",
-                  "attachments": [
-                    {
-                      "name": "trace",
-                      "contentType": "application/zip",
-                      "path": "C:\\Program Files\\playwright-automation\\test-results\\example-get-started-link-webkit\\trace.zip"
-                    }
-                  ]
-                }
-              ],
-              "status": "expected"
-            }
-          ],
-          "id": "a30a6eba6312f6b87ea5-1eb159041d56409ed83c",
-          "file": "example.spec.ts",
-          "line": 10,
+          "id": "82f222b977f8b9e5d114-f896c752f0cf49c38a8b",
+          "file": "SwagLabs/selectItem.spec.ts",
+          "line": 5,
           "column": 5
         }
       ]
@@ -332,9 +152,9 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2025-02-03T13:08:38.616Z",
-    "duration": 21490.664,
-    "expected": 6,
+    "startTime": "2025-02-10T13:55:51.861Z",
+    "duration": 14556.993,
+    "expected": 2,
     "skipped": 0,
     "unexpected": 0,
     "flaky": 0
