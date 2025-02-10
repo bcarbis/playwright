@@ -26,11 +26,11 @@ test('select multiple items test', async ({ page }) => {
         await page.locator('[data-test="item-2-title-link"]').click();
         await page.locator('[data-test="add-to-cart"]').click();
         await page.locator('[data-test="back-to-products"]').click();
-        await page.locator('[data-test="shopping-cart-link"]').click();
     });
 
     // Check Cart
     await addStep('Check cart', async () => {
+        await page.locator('[data-test="shopping-cart-link"]').click();
         await pauseExecution(1000);
         await expect(page.locator('.cart_item')).toContainText([firstSelection, secondSelection]);
         await screenshotAllure('Cart Items', page);
