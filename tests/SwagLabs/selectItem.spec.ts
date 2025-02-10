@@ -1,19 +1,21 @@
 import { test, expect, Page } from '@playwright/test';
-import { loginToSaucedemo } from '../commonActions';
+import { loginToSaucedemo, selectFirstItem } from '../commonActions';
 import { pauseExecution } from '../utils';
+import { addStep } from '../allureActions';
 
 test('select single item test', async ({ page }) => {
     // Run the login script
+   await addStep('Login to SauceDemo', async () => {
     await loginToSaucedemo(page);
+   });
+
+    let firstSelection: string;
 
     // Select Single Item
-    const firstSelection = await page.locator('[data-test="item-4-title-link"]').innerText();
-    await page.locator('[data-test="item-4-title-link"]').click();
-    console.log(firstSelection); 
-    await page.locator('[data-test="add-to-cart"]').click();
-    await page.locator('[data-test="shopping-cart-link"]').click();
-    await pauseExecution(1000);
-    await expect(page.locator('[data-test="item-4-title-link"]')).toHaveText(firstSelection);  
+ await addStep('Select First Item', async () => {
+        await pauseExecution(1000);
+        firstSelection = await selectFirstItem(page);
+    }); 
         
 });
 
