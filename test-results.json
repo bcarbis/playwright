@@ -86,12 +86,12 @@
                 {
                   "workerIndex": 0,
                   "status": "passed",
-                  "duration": 15100,
+                  "duration": 14789,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2025-02-10T21:17:12.817Z",
+                  "startTime": "2025-02-11T14:52:48.157Z",
                   "attachments": [
                     {
                       "name": "trace",
@@ -124,12 +124,12 @@
                 {
                   "workerIndex": 1,
                   "status": "passed",
-                  "duration": 13642,
+                  "duration": 18523,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2025-02-10T21:17:12.974Z",
+                  "startTime": "2025-02-11T14:52:48.187Z",
                   "attachments": [
                     {
                       "name": "trace",
@@ -170,7 +170,7 @@
                 {
                   "workerIndex": 2,
                   "status": "passed",
-                  "duration": 11729,
+                  "duration": 18071,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
@@ -178,10 +178,10 @@
                   "steps": [
                     {
                       "title": "Login to SauceDemo",
-                      "duration": 5006
+                      "duration": 7494
                     }
                   ],
-                  "startTime": "2025-02-10T21:17:12.828Z",
+                  "startTime": "2025-02-11T14:52:48.303Z",
                   "attachments": [
                     {
                       "name": "Login Screenshot",
@@ -227,7 +227,7 @@
                 {
                   "workerIndex": 3,
                   "status": "passed",
-                  "duration": 12749,
+                  "duration": 17854,
                   "errors": [],
                   "stdout": [
                     {
@@ -239,14 +239,14 @@
                   "steps": [
                     {
                       "title": "Login to SauceDemo",
-                      "duration": 4157
+                      "duration": 5135
                     },
                     {
                       "title": "Select First Item",
-                      "duration": 3881
+                      "duration": 4548
                     }
                   ],
-                  "startTime": "2025-02-10T21:17:12.993Z",
+                  "startTime": "2025-02-11T14:52:48.227Z",
                   "attachments": [
                     {
                       "name": "trace",
@@ -285,9 +285,9 @@
               "projectName": "SwagLabs",
               "results": [
                 {
-                  "workerIndex": 2,
+                  "workerIndex": 0,
                   "status": "passed",
-                  "duration": 9259,
+                  "duration": 9797,
                   "errors": [],
                   "stdout": [
                     {
@@ -302,22 +302,22 @@
                   "steps": [
                     {
                       "title": "Login to SauceDemo",
-                      "duration": 1215
+                      "duration": 1424
                     },
                     {
                       "title": "Select First Item",
-                      "duration": 3489
+                      "duration": 3497
                     },
                     {
                       "title": "Select Second Item",
-                      "duration": 2292
+                      "duration": 2245
                     },
                     {
                       "title": "Check Cart",
-                      "duration": 1217
+                      "duration": 1213
                     }
                   ],
-                  "startTime": "2025-02-10T21:17:26.098Z",
+                  "startTime": "2025-02-11T14:53:05.836Z",
                   "attachments": [
                     {
                       "name": "Cart Items",
@@ -345,8 +345,8 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2025-02-10T21:17:11.497Z",
-    "duration": 24441.341,
+    "startTime": "2025-02-11T14:52:45.618Z",
+    "duration": 30846.557999999997,
     "expected": 5,
     "skipped": 0,
     "unexpected": 0,
