@@ -1,5 +1,5 @@
 import { test } from '@playwright/test';
-import { loginToSaucedemo } from '../commonActions';
+import { loginToSaucedemoStandard } from '../commonActions';
 import { addStep, screenshotAllure } from '../allureActions';
 
 /**
@@ -8,7 +8,7 @@ import { addStep, screenshotAllure } from '../allureActions';
 */
 test('login to saucedemo', async ({ page }) => {
    await addStep('Login to SauceDemo', async () => {
-    await loginToSaucedemo(page);
+    await loginToSaucedemoPerfor(page);
     await screenshotAllure('Login Screenshot', page);
    });
 });
