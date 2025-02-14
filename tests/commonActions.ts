@@ -52,7 +52,7 @@ export async function loginToSaucedemoLockedOut(page: Page): Promise<void> {
     await page.click('#login-button');
 
     // Verify successful login by checking for the presence of the inventory page
-    await expect(page).toHaveURL(`${baseURL}inventory.html`);
+    await expect(page.locator('[data-test="error"]')).toHaveText(`Epic sadface: Sorry, this user has been locked out.`);
 }
 
 /**
@@ -223,5 +223,20 @@ export async function checkout(page: Page): Promise<void> {
 export async function logout(page: Page): Promise<void> {
     await page.getByRole('button', { name: 'Open Menu' }).click();
     await page.locator('[data-test="logout-sidebar-link"]').click();
+    await page.pause();
     await expect(page.locator('#login-button')).toBeVisible();
+};
+
+
+/**
+ * Verify Side Menu
+ */
+export async function verifyMenu(page: Page): Promise<void> {
+    await page.getByRole('button', { name: 'Open Menu' }).click();
+   await pauseExecution(1000);
+    await expect(page.locator('[data-test="inventory-sidebar-link"]')).toBeVisible();
+    await expect(page.locator('[data-test="about-sidebar-link"]')).toBeVisible();
+    await expect(page.locator('[data-test="logout-sidebar-link"]')).toBeVisible();
+    await expect(page.locator('[data-test="reset-sidebar-link"]')).toBeVisible();
+    await page.locator('[data-test="logout-sidebar-link"]').click();
 };
