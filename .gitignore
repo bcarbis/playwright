@@ -7,3 +7,32 @@ node_modules/
 /playwright/.cache/
 /allure-report/
 /allure-results/
+
+# Ignore system directories
+AppData/
+Application Data/
+Cookies/
+Documents/My Music/
+Documents/My Pictures/
+Documents/My Videos/
+Local Settings/
+My Documents/
+NetHood/
+PrintHood/
+Recent/
+SendTo/
+Start Menu/
+Templates/
+
+# Ignore VSCode settings
+.vscode/
+
+# Ignore SSH keys
+.ssh/
+
+# Ignore other user-specific files
+.babel.json
+.config/
+.copilot-cli-access-token
+.gitconfig
+.node_repl_history
