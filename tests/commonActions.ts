@@ -227,15 +227,19 @@ export async function logout(page: Page): Promise<void> {
 };
 
 
+
+
+
+
 /**
  * Verify Side Menu
  */
 export async function verifyMenu(page: Page): Promise<void> {
     await page.getByRole('button', { name: 'Open Menu' }).click();
-   await pauseExecution(1000);
+//    await pauseExecution(1000);
     await expect(page.locator('[data-test="inventory-sidebar-link"]')).toBeVisible();
     await expect(page.locator('[data-test="about-sidebar-link"]')).toBeVisible();
     await expect(page.locator('[data-test="logout-sidebar-link"]')).toBeVisible();
     await expect(page.locator('[data-test="reset-sidebar-link"]')).toBeVisible();
-    await page.locator('[data-test="logout-sidebar-link"]').click();
+    await page.getByRole('button', { name: 'Close Menu' }).click();
 };
