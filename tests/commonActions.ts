@@ -223,7 +223,6 @@ export async function checkout(page: Page): Promise<void> {
 export async function logout(page: Page): Promise<void> {
     await page.getByRole('button', { name: 'Open Menu' }).click();
     await page.locator('[data-test="logout-sidebar-link"]').click();
-    await page.pause();
     await expect(page.locator('#login-button')).toBeVisible();
 };
 
